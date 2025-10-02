@@ -2,16 +2,14 @@ import "inter-ui/inter.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { GeistProvider, CssBaseline } from "@geist-ui/core";
-import { RouterProvider } from "react-router";
 
-import router from "./lib/router.ts";
+import ThemeContextProvider from "./contexts/theme/ThemeContextProvider.tsx";
+import App from "./components/App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <GeistProvider>
-      <CssBaseline />
-      <RouterProvider router={router} />
-    </GeistProvider>
+    <ThemeContextProvider>
+      <App />
+    </ThemeContextProvider>
   </StrictMode>
 );
