@@ -24,7 +24,7 @@ import {
 
 import type { Movie } from "@/types/global";
 
-export default function Movie({ movie }: { movie: Movie }) {
+export default function MovieCard({ movie }: { movie: Movie }) {
   return (
     <Card className="w-80 py-0 bg-background/80 backdrop-blur-md overflow-hidden hover:scale-[1.02] transition">
       <div className="relative h-60 w-full">
