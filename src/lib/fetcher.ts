@@ -27,7 +27,7 @@ export async function fetchTopRatedMovies(): Promise<[Movie]> {
 }
 
 export async function fetchLatestMovies(): Promise<[Movie]> {
-  const res = await fetch(`${BASE_URL}/movie/latest?api_key=${API_KEY}`);
+  const res = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
   const data = await res.json();
-  return [data];
+  return data.results;
 }

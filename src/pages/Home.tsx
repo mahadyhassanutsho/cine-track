@@ -9,9 +9,17 @@ import {
 export default function Home() {
   return (
     <Page>
-      <MovieSection title="Top Rated Movies" fetcher={fetchTopRatedMovies()} />
-      <MovieSection title="Trending Movies" fetcher={fetchTrendingMovies()} />
-      <MovieSection title="Latest Movies" fetcher={fetchLatestMovies()} />
+      <MovieSection title="Latest Movies" fetcher={fetchLatestMovies()} short />
+      <MovieSection
+        title="Trending Movies"
+        fetcher={fetchTrendingMovies()}
+        short
+      />
+      <MovieSection
+        title="Top Rated Movies"
+        fetcher={fetchTopRatedMovies()}
+        short
+      />
     </Page>
   );
 }
