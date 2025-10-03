@@ -26,7 +26,7 @@ import type { Movie } from "@/types/global";
 
 export default function MovieCard({ movie }: { movie: Movie }) {
   return (
-    <Card className="w-80 py-0 bg-background/80 backdrop-blur-md overflow-hidden hover:scale-[1.02] transition">
+    <Card className="max-w-full min-w-72  py-0 bg-background/80 backdrop-blur-md overflow-hidden hover:scale-[1.02] transition">
       <div className="relative h-60 w-full">
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
