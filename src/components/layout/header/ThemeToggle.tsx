@@ -7,7 +7,7 @@ export default function ThemeToggle() {
   const { theme, toggleTheme } = useThemeContext();
 
   return (
-    <Button onClick={toggleTheme} variant={"outline"}>
+    <Button variant="outline" onClick={toggleTheme}>
       {theme === "light" ? <Moon /> : <Sun />}
     </Button>
   );
