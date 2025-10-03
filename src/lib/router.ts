@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 
-import Root from "../pages/Root";
-import Home from "../pages/Home";
+import Root from "@/components/layout/RootLayout";
+import Home from "@/pages/Home";
 
 export const routes = [
   { path: "", name: "Home", isNavLink: true, Component: Home },

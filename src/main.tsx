@@ -1,10 +1,10 @@
-import "inter-ui/inter.css";
+import "@/css/main.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import ThemeContextProvider from "./contexts/theme/ThemeContextProvider.tsx";
-import App from "./components/App.tsx";
+import ThemeContextProvider from "@/contexts/theme/ThemeContextProvider.tsx";
+import App from "@/components/App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
